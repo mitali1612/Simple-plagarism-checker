@@ -1,0 +1,5 @@
+Agile SDLC model is a combination of iterative and incremental process models with focus on process adaptability 
+and customer satisfaction by rapid delivery of working software product. Agile Methods break the product into 
+small incremental builds. These builds are provided in iterations. Each iteration typically lasts from about 
+one to three weeks. Every iteration involves cross functional teams working simultaneously on various areas 
+like -

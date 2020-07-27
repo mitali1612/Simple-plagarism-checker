@@ -1,0 +1,48 @@
+<!doctype html>
+<title>Python Flask Multiple Files Upload Example</title>
+<h2 style="text-align:center">Select file's to upload</h2>
+<p>
+	{% with messages = get_flashed_messages() %}
+	  {% if messages %}
+		<ul class=flashes>
+		{% for message in messages %}
+		  <li>{{ message }}</li>
+		{% endfor %}
+		</ul>
+	  {% endif %}
+	{% endwith %}
+</p>
+<form method="POST" action="/index" enctype="multipart/form-data" style="text-align:center">
+
+    <dl>
+		<p>
+			<input type="file" name="files[]" multiple="true" autocomplete="off" required>
+		</p>
+    </dl>
+    <p>
+		<input type="submit" value="Submit">
+
+	</p>
+
+</form>
+
+
+<style>
+body {
+            background:
+            linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://as2.ftcdn.net/jpg/01/78/06/31/500_F_178063106_5uaGiioU1TbrjAyvluQ6Wt8paAl6s1Fo.jpg');
+        }
+
+input {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
